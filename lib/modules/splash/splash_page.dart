@@ -1,4 +1,4 @@
-import 'package:firebase_remote_config/firebase_remote_config.dart';
+// import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -8,8 +8,8 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(title: const Text('Splash Page')),
       body: Center(
+        // child: Text(FirebaseRemoteConfig.instance.getString("api_token")),
         child: Container(
           width: Get.width,
           height: Get.height,
@@ -20,8 +20,6 @@ class SplashPage extends StatelessWidget {
           ),
           child: Image.asset('assets/images/logo.png'),
         ),
-
-        // child: Text(FirebaseRemoteConfig.instance.getString("api_token")),
       ),
     );
   }
