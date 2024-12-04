@@ -1,3 +1,4 @@
+import 'package:app_filme_getx/modules/splash/splash_module.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       ),
       getPages: [
         // GetPage(name: '/', page: () => Container()),
+        ...SplashModule().routers,
       ],
     );
   }
