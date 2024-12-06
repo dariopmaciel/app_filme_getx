@@ -6,16 +6,15 @@ import 'package:get/get.dart';
 class SplashPage extends StatelessWidget {
   //*Aqui eu delego o controlle a classe. E busca uma instância já registrada previamente no GetX,
   //*ele não criará uma nova instância, apenas reutilizará a existente.
-  var controller = Get.put<SplashController>(SplashController());
+  // var controller = Get.put(SplashController());
 
   //*Aqui eu crio uma nova instancio da classe
   //*Cada vez que essa linha é executada, uma nova instância será criada, sem qualquer gerenciamento adicional.
   // var controller = SplashController();
 
-  SplashPage({super.key});
+  const SplashPage({super.key});
 
-  @override
-
+  // @override
   // void initState() {
   //   //! Para criações a serem criadas depois que o 'init' e o 'build' foi construido (addPostFrameCallback)
   //   WidgetsBinding.instance.addPostFrameCallback(
