@@ -1,9 +1,32 @@
 // import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:app_filme_getx/modules/splash/splash_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SplashPage extends StatelessWidget {
-  const SplashPage({super.key});
+class SplashPage extends StatefulWidget {
+  var controller = Get.find<SplashController>();
+  SplashPage({super.key});
+
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    //! Para criações a serem criadas depois que meu build for construido
+    WidgetsBinding.instance.addPostFrameCallback(
+      //!ESTA CONSTRUÇÃO
+      (timeStamp) {},
+    );
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
