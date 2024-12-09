@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
+// class LoginPage extends GetView<LoginController> {
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
   @override

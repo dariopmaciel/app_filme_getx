@@ -15,6 +15,7 @@ class SplashController extends GetxController {
     // depois de carregado, se passou no teste , faz tal coisa, se não faz outra
     super.onReady();
     Get.offAllNamed('/login'); // remove toda a pilha e vá para '/login'
+    
   }
 
   //Para quando se starta a aplicação

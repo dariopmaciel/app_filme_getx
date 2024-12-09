@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
 
 class LoginController extends GetxController {
-RxString name = RxString('Dario de Paula MAciel');
+// RxString name = RxString('Dario de Paula MAciel');
+var name = "Dario de Paula Maciel".obs;
 
 // String name = 'Dario de Paula MAciel';
 
