@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
-// class LoginPage extends GetView<LoginController> {
-class LoginPage extends StatelessWidget {
-  LoginPage({super.key});
+class LoginPage extends GetView<LoginController> {
+  //ou assim e add a controller
+// class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
@@ -73,17 +74,26 @@ class _AnimationExampleState extends State<AnimationExample> {
                       onPressed: () => controller.login(),
                     ),
                   ),
-                  Obx(
-                    () {
-                      return Text(
-                        controller.name.value,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                        ),
-                      );
-                    },
-                  )
+                  // Obx(
+                  //   () {
+                  //     return Text(
+                  //       //!AQUI
+                  //       controller.name.value,
+                  //       style: const TextStyle(
+                  //         fontSize: 14,
+                  //         color: Colors.white,
+                  //       ),
+                  //     );
+                  //   },
+                  // ),
+                  const SizedBox(height: 400),
+                  const Text(
+                    'Este app foi criado por: DARIO P MACIEL',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
                 ],
               ),
             ),
